@@ -3,12 +3,12 @@ convenient codes in command line
 
 
 ## フォルダ内のサブディレクトリを参照して，　フォルダだけを表示
-```
+```sh
 ls -F $HOME/DirectoryXXX | grep / | sed s/\\/$//g >> SampleList.txt   
 ```
 
 ## サンプルリストを読み込み， whileで処理する
-```
+```sh
 cat SampleList.txt | while read line
 do
 
