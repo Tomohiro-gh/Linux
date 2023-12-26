@@ -7,7 +7,8 @@ convenient codes in command line
 ls -F $HOME/DirectoryXXX | grep / | sed s/\\/$//g >> SampleList.txt   
 ```
 
-## サンプルリストを読み込み， whileで処理する
+## サンプルリストを読み込み， 一括処理する
+### 1) whileの場合
 ```sh
 cat SampleList.txt | while read line
 do
@@ -15,4 +16,14 @@ do
 comanndXXXX
 
 done
+```
+
+### 2) forの場合
+```sh
+for a_dir in ${dir_list[@]}; do
+
+comanndXXXX
+
+done
+
 ```
